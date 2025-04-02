@@ -635,7 +635,7 @@ dial()
 	[ -z "${modem_no}" ] && return 0
 	
 	#获取模组的拨号模式
-	local time=40
+	local time=60
 	local mode
 	for i in $(seq 1 ${time}); do
 		mode=$(get_mode ${modem_no})
